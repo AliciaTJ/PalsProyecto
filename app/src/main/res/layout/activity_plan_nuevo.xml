@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanNuevo">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCabecera"
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/cine2" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tiltitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+
+                <EditText
+                    android:id="@+id/titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Titulo"
+                    android:inputType="text"
+                    android:singleLine="true"
+
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tillugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="lugar"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilinformacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="50">
+
+                <EditText
+                    android:id="@+id/informacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="informacion"
+
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+                   />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/fechaIndiferente"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="Switch"
+                    tools:layout_editor_absoluteX="127dp"
+                    tools:layout_editor_absoluteY="151dp" />
+
+                <TextView
+                    android:id="@+id/etFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCreador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/botonGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="guardar"
+                android:text="Button" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

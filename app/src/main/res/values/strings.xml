@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pals</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_portada">Pals!</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar menu</string>
+    <string name="nav_header_title">Pals!</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Bienvenido a pals!</string>
+    <string name="action_settings">Opciones</string>
+    <string name="planes">Mis planes</string>
+    <string name="buscarplanes">Buscar planes</string>
+    <string name="nuevoPlan">Nuevo plan</string>
+    <string name="title_activity_planes">Planes</string>
+    <string name="log">Entrar</string>
+    <string name="registrar">Registrate</string>
+    <string name="title_activity_crear_plan">CrearPlan</string>
+
+</resources>
