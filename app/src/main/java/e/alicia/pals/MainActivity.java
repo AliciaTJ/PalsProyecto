@@ -29,9 +29,8 @@ public class MainActivity extends AppCompatActivity {
     DataBaseUsuario dataBaseUsuario;
     EditText etEmail;
     EditText etPass;
-    String uid="";
 
-//76cc5a6e637d92e20991a095b2c6bf8717f57d80
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,10 +56,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        uid=currentUser.getEmail();
-        System.out.println(uid);
         updateUI(currentUser);
 
         //si no es nulo acceder directamente al listado
@@ -127,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             String name = user.getDisplayName();
             String email = user.getEmail();
             Uri photoUrl = user.getPhotoUrl();
-            uid = user.getUid();
+          String  uid = user.getUid();
 
         }
     }
