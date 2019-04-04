@@ -111,7 +111,7 @@ public class PlanNuevo extends AppCompatActivity {
         etCreado.setText("Creado por: "+ user.getProviderId());
         etTitulo = findViewById(R.id.titulo);
         etLugar = findViewById(R.id.lugar);
-        cvFecha = findViewById(R.id.cvFecha);
+
         etInfo.setText(user.getEmail());
         fechaIndiferente = findViewById(R.id.fechaIndiferente);
         tilInformacion = findViewById(R.id.tilinformacion);

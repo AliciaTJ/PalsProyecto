@@ -44,7 +44,7 @@
                     android:layout_marginBottom="25dp"
                     android:ems="10"
                     android:gravity="center"
-                    android:hint="Titulo"
+                    android:hint="@string/titulopub"
                     android:inputType="text"
                     android:singleLine="true"
 
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="lugar"
+                    android:hint="@string/lugar"
                     android:inputType="text"
                     android:singleLine="true" />
 
@@ -80,11 +80,10 @@
                     android:layout_height="130dp"
                     android:ems="10"
                     android:gravity="top"
-                    android:hint="informacion"
+                    android:hint="@string/descripción"
 
                     android:inputType="textMultiLine"
-                    android:singleLine="false"
-                   />
+                    android:singleLine="false" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -95,10 +94,10 @@
 
                 <Switch
                     android:id="@+id/fechaIndiferente"
-                    android:layout_width="129dp"
+                    android:layout_width="184dp"
                     android:layout_height="wrap_content"
                     android:enabled="true"
-                    android:text="Switch"
+                    android:text="@string/seleccionarfecha"
                     tools:layout_editor_absoluteX="127dp"
                     tools:layout_editor_absoluteY="151dp" />
 
@@ -122,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="guardar"
-                android:text="Button" />
+                android:text="@string/guardar" />
 
         </LinearLayout>
     </ScrollView>

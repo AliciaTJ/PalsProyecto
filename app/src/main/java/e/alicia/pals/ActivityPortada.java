@@ -38,7 +38,7 @@ FirebaseAuth user;
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.common_open_on_phone, R.string.abandonar);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 

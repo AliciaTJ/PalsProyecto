@@ -20,9 +20,7 @@ ImageButton ibFreak, ibCine, ibMusica, ibFiesta, ibOtros, ibTurismo, ibCultura, 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipo_plan);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.content_crear_plan);
         user=getIntent().getStringExtra("user");
         //-----------se establecen los enlaces
         ibDeporte=findViewById(R.id.ibDeportes);

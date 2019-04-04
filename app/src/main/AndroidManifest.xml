@@ -16,18 +16,18 @@
         android:theme="@style/AppTheme">
         <activity android:name=".VerPlan"></activity>
         <activity android:name=".PlanNuevo" />
-        <activity android:name=".CrearPlan" />
+
         <activity
             android:name=".TipoPlan"
-            android:label="@string/title_activity_crear_plan"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/tipo"
+             />
         <activity
             android:name=".Planes"
-            android:label="@string/title_activity_planes"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/buscarPlanes"
+           />
         <activity
             android:name=".ActivityPortada"
-            android:label="@string/title_activity_portada"
+            android:label="@string/titulo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
